@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="0dp">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".SensorData">
+
+        <TextView
+            android:id="@+id/display"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/sensor_readings"
+            android:textAlignment="center"
+            android:textColor="#3F51B5"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.464"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.033" />
+
+        <LinearLayout
+            android:id="@+id/tempBox"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="30sp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/display"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:id="@+id/temp_sensor"
+                android:layout_width="200sp"
+                android:layout_height="match_parent"
+                android:paddingTop="25sp"
+                android:text="@string/temperature"
+                android:textAlignment="center"
+                android:textSize="24sp" />
+
+
+            <TextView
+                android:id="@+id/temp_display"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingTop="25sp"
+                android:text="@string/temp_na"
+                android:textAlignment="center"
+                android:textColor="#A1887F"
+                android:textSize="24sp"
+                tools:ignore="TextContrastCheck,TextContrastCheck" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/humBox"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="30sp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tempBox"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:id="@+id/hum_sensor"
+                android:layout_width="200sp"
+                android:layout_height="match_parent"
+                android:paddingTop="25sp"
+                android:text="@string/humidity_sensor_name"
+                android:textAlignment="center"
+                android:textColor="#A1887F"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/hum_display"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingTop="25sp"
+                android:text="@string/hum_na"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                tools:ignore="TextContrastCheck" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lightBox"
+            android:layout_width="match_parent"
+            android:layout_height="100sp"
+            android:layout_marginTop="30sp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/humBox"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:id="@+id/light_sensor"
+                android:layout_width="200sp"
+                android:layout_height="match_parent"
+                android:paddingTop="25sp"
+                android:text="@string/light_display_name"
+                android:textAlignment="center"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/light_display"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingTop="25sp"
+                android:text="@string/_503_8_lux"
+                android:textAlignment="center"
+                android:textColor="#A1887F"
+                android:textSize="24sp"
+                tools:ignore="TextContrastCheck,TextContrastCheck" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/soilBox"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="30sp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lightBox"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:id="@+id/moisture_sensor"
+                android:layout_width="200sp"
+                android:layout_height="match_parent"
+                android:paddingTop="25sp"
+                android:text="@string/soil_moisture_display_name"
+                android:textAlignment="center"
+                android:textColor="#A1887F"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/moisture_display"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingTop="25sp"
+                android:text="@string/_30"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                tools:ignore="TextContrastCheck,TextContrastCheck" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/actuator_onSensor"
+            android:layout_width="175dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginBottom="30dp"
+            android:background="#000000"
+            android:onClick="login_actuator"
+            android:shadowColor="#FFFFFF"
+            android:text="@string/actuator"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FAFAFA"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/soilBox" />
+
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
