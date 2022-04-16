@@ -13,7 +13,6 @@ import java.util.Objects;
 public class MainActivity extends AppCompatActivity {
 
     public static final String MSG = "com.example.greenhouse.msg";
-
     public void login_refresh(View view) {
         String tag = "Refresh", msg = "checking for refresh button running";
         Log.i(tag, msg);
@@ -24,7 +23,6 @@ public class MainActivity extends AppCompatActivity {
         intent.putExtra(MSG, message);
         startActivity(intent);
     }
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

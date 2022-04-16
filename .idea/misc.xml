@@ -3,18 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/hp/AndroidStudioProjects/GreenhouseMonitoring/app/src/main/res/drawable-v24/ic_launcher_background.xml" value="0.1" />
-        <entry key="..\:/Users/hp/AndroidStudioProjects/GreenhouseMonitoring/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1545" />
-        <entry key="..\:/Users/hp/AndroidStudioProjects/GreenhouseMonitoring/app/src/main/res/drawable/greenhouse_background.xml" value="0.2595" />
-        <entry key="..\:/Users/hp/AndroidStudioProjects/GreenhouseMonitoring/app/src/main/res/drawable/greenhouse_foreground.xml" value="0.218" />
-        <entry key="..\:/Users/hp/AndroidStudioProjects/GreenhouseMonitoring/app/src/main/res/drawable/linearlayoutshape.xml" value="0.214" />
-        <entry key="..\:/Users/hp/AndroidStudioProjects/GreenhouseMonitoring/app/src/main/res/drawable/linearlayoutshapesensor.xml" value="0.214" />
-        <entry key="..\:/Users/hp/AndroidStudioProjects/GreenhouseMonitoring/app/src/main/res/drawable/roundbutton.xml" value="0.214" />
-        <entry key="..\:/Users/hp/AndroidStudioProjects/GreenhouseMonitoring/app/src/main/res/drawable/roundbutton_actuator.xml" value="0.2555" />
-        <entry key="..\:/Users/hp/AndroidStudioProjects/GreenhouseMonitoring/app/src/main/res/layout/activity_actuator.xml" value="0.8" />
-        <entry key="..\:/Users/hp/AndroidStudioProjects/GreenhouseMonitoring/app/src/main/res/layout/activity_main.xml" value="0.24909420289855072" />
-        <entry key="..\:/Users/hp/AndroidStudioProjects/GreenhouseMonitoring/app/src/main/res/layout/activity_sensor_data.xml" value="0.8" />
-        <entry key="..\:/Users/hp/AndroidStudioProjects/GreenhouseMonitoring/app/src/main/res/xml/ic_launcher_foreground.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/GreenhouseMonitoring/app/src/main/res/layout/activity_main.xml" value="0.25" />
       </map>
     </option>
   </component>
