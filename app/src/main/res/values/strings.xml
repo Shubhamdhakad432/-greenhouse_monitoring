@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Greenhouse Monitoring</string>
+    <string name="app_name">GMonita</string>
     <string name="temperature1">Temperature</string>
     <string name="density">Density</string>
     <string name="humidity1">Humidity</string>
@@ -24,7 +24,7 @@
     <string name="light_display_name">Light</string>
     <string name="todo_light">TODO</string>
     <string name="light_na">N/A</string>
-    <string name="soil_moisture_display_name">Soil Moisture</string>
+    <string name="soil_moisture_display_name">Moisture</string>
     <string name="todo_soil">TODO</string>
     <string name="soil_moisture_na">N/A</string>
     <string name="camera_name">Camera</string>
@@ -52,11 +52,14 @@
     <string name="enter_password">Enter Password</string>
     <string name="_30">30%</string>
     <string name="_503_8_lux">503.8 lux</string>
-    <string name="login_me">Login me</string>
+    <string name="login_me">Login</string>
     <string name="actuator">Actuator</string>
     <string name="actuator_control">Actuator Control</string>
     <string name="temperature_act">Fan</string>
-    <string name="humidty_act">Exhaust Fan</string>
+    <string name="humidty_act">Exhaust</string>
     <string name="light_act">Lamp</string>
     <string name="soil_moisture_act">Water Supply</string>
+    <string name="welcome">Welcome</string>
+    <string name="on_switch">On</string>
+    <string name="off_switch">Off</string>
 </resources>

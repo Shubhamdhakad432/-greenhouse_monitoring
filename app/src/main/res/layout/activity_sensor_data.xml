@@ -13,31 +13,18 @@
         android:layout_height="wrap_content"
         tools:context=".SensorData">
 
-        <TextView
-            android:id="@+id/display"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="@string/sensor_readings"
-            android:textAlignment="center"
-            android:textColor="#3F51B5"
-            android:textSize="24sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.464"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.033" />
-
         <LinearLayout
             android:id="@+id/tempBox"
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:layout_marginTop="30sp"
+            android:layout_width="331dp"
+            android:layout_height="93dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/linearlayoutshapesensor"
             android:orientation="horizontal"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/display"
+            app:layout_constraintTop_toTopOf="parent"
             tools:ignore="MissingConstraints">
+
 
             <TextView
                 android:id="@+id/temp_sensor"
@@ -46,8 +33,7 @@
                 android:paddingTop="25sp"
                 android:text="@string/temperature"
                 android:textAlignment="center"
-                android:textSize="24sp" />
-
+                android:textSize="20sp" />
 
             <TextView
                 android:id="@+id/temp_display"
@@ -57,18 +43,18 @@
                 android:paddingTop="25sp"
                 android:text="@string/temp_na"
                 android:textAlignment="center"
-                android:textColor="#A1887F"
-                android:textSize="24sp"
+                android:textSize="20sp"
                 tools:ignore="TextContrastCheck,TextContrastCheck" />
 
         </LinearLayout>
 
         <LinearLayout
             android:id="@+id/humBox"
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:layout_marginTop="30sp"
+            android:layout_width="331dp"
+            android:layout_height="93dp"
+            android:layout_marginTop="15sp"
             android:orientation="horizontal"
+            android:background="@drawable/linearlayoutshapesensor"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tempBox"
@@ -81,8 +67,7 @@
                 android:paddingTop="25sp"
                 android:text="@string/humidity_sensor_name"
                 android:textAlignment="center"
-                android:textColor="#A1887F"
-                android:textSize="24sp" />
+                android:textSize="20sp" />
 
             <TextView
                 android:id="@+id/hum_display"
@@ -92,16 +77,17 @@
                 android:paddingTop="25sp"
                 android:text="@string/hum_na"
                 android:textAlignment="center"
-                android:textSize="24sp"
+                android:textSize="20sp"
                 tools:ignore="TextContrastCheck" />
         </LinearLayout>
 
         <LinearLayout
             android:id="@+id/lightBox"
-            android:layout_width="match_parent"
-            android:layout_height="100sp"
-            android:layout_marginTop="30sp"
+            android:layout_width="331dp"
+            android:layout_height="93dp"
+            android:layout_marginTop="15sp"
             android:orientation="horizontal"
+            android:background="@drawable/linearlayoutshapesensor"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/humBox"
@@ -114,7 +100,7 @@
                 android:paddingTop="25sp"
                 android:text="@string/light_display_name"
                 android:textAlignment="center"
-                android:textSize="24sp" />
+                android:textSize="20sp" />
 
             <TextView
                 android:id="@+id/light_display"
@@ -124,17 +110,17 @@
                 android:paddingTop="25sp"
                 android:text="@string/_503_8_lux"
                 android:textAlignment="center"
-                android:textColor="#A1887F"
-                android:textSize="24sp"
+                android:textSize="20sp"
                 tools:ignore="TextContrastCheck,TextContrastCheck" />
         </LinearLayout>
 
         <LinearLayout
             android:id="@+id/soilBox"
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:layout_marginTop="30sp"
+            android:layout_width="331dp"
+            android:layout_height="93dp"
+            android:layout_marginTop="15sp"
             android:orientation="horizontal"
+            android:background="@drawable/linearlayoutshapesensor"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/lightBox"
@@ -147,8 +133,7 @@
                 android:paddingTop="25sp"
                 android:text="@string/soil_moisture_display_name"
                 android:textAlignment="center"
-                android:textColor="#A1887F"
-                android:textSize="24sp" />
+                android:textSize="20sp" />
 
             <TextView
                 android:id="@+id/moisture_display"
@@ -158,29 +143,33 @@
                 android:paddingTop="25sp"
                 android:text="@string/_30"
                 android:textAlignment="center"
-                android:textSize="24sp"
+                android:textSize="20sp"
                 tools:ignore="TextContrastCheck,TextContrastCheck" />
 
         </LinearLayout>
 
         <Button
             android:id="@+id/actuator_onSensor"
-            android:layout_width="175dp"
-            android:layout_height="50dp"
-            android:layout_marginTop="28dp"
-            android:layout_marginBottom="30dp"
-            android:background="#000000"
+            android:layout_width="174dp"
+            android:layout_height="67dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/roundbutton"
             android:onClick="login_actuator"
             android:shadowColor="#FFFFFF"
             android:text="@string/actuator"
             android:textAlignment="center"
-            android:textColor="#FFFFFF"
+            android:textColor="#FFF"
             android:textColorHint="#FAFAFA"
+            android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/soilBox" />
-
+            app:layout_constraintTop_toBottomOf="@+id/soilBox"
+            app:layout_constraintVertical_bias="0.202" />
 
     </android.support.constraint.ConstraintLayout>
 </ScrollView>

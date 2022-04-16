@@ -2,7 +2,9 @@ package com.example.greenhousemonitoring;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
@@ -28,6 +30,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Objects;
 
 public class SensorData extends AppCompatActivity {
 
@@ -39,6 +42,9 @@ public class SensorData extends AppCompatActivity {
         String message = intent.getStringExtra(MainActivity.MSG);
         //TextView textView = findViewById(R.id.display);
         //textView.setText(message);
+        Objects.requireNonNull(getSupportActionBar()).setTitle("Sensor Module");
+        Objects.requireNonNull(getSupportActionBar()).setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.black)));
+        getWindow().setStatusBarColor(ContextCompat.getColor(SensorData.this, R.color.black));
 
         RequestQueue requestQueue = Volley.newRequestQueue(this);
 

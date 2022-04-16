@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -6,124 +7,95 @@
     android:layout_height="match_parent"
     android:fillViewport="true"
     tools:layout_editor_absoluteX="0dp"
-    tools:layout_editor_absoluteY="0dp">
+    tools:layout_editor_absoluteY="0dp"
+    tools:ignore="ExtraText">
 
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#FFFFFF"
-        tools:context=".MainActivity">
+        tools:context=".MainActivity"
+        android:background="@drawable/frontwall"
+        android:alpha="1">
 
-<!--        <EditText-->
-<!--            android:id="@+id/login_server"-->
-<!--            android:layout_width="0dp"-->
-<!--            android:layout_height="56dp"-->
-<!--            android:layout_marginTop="60dp"-->
-<!--            android:autofillHints="N/A"-->
-<!--            android:ems="10"-->
-<!--            android:hint="@string/enter_server_url"-->
-<!--            android:inputType="textPersonName"-->
-<!--            android:textColor="#2E0A0A"-->
-<!--            android:textColorHint="#78909C"-->
-<!--            app:layout_constraintEnd_toEndOf="parent"-->
-<!--            app:layout_constraintHorizontal_bias="0.0"-->
-<!--            app:layout_constraintStart_toStartOf="parent"-->
-<!--            app:layout_constraintTop_toTopOf="parent" />-->
-
-<!--        <EditText-->
-<!--            android:id="@+id/login_client"-->
-<!--            android:layout_width="0dp"-->
-<!--            android:layout_height="56dp"-->
-<!--            android:layout_marginTop="40dp"-->
-<!--            android:autofillHints="N/A"-->
-<!--            android:ems="10"-->
-<!--            android:hint="@string/enter_client_id"-->
-<!--            android:inputType="textPersonName"-->
-<!--            android:textColor="#2E0A0A"-->
-<!--            android:textColorHint="#78909C"-->
-<!--            app:layout_constraintEnd_toEndOf="parent"-->
-<!--            app:layout_constraintHorizontal_bias="0.0"-->
-<!--            app:layout_constraintStart_toStartOf="parent"-->
-<!--            app:layout_constraintTop_toBottomOf="@+id/login_server" />-->
-
-        <!--        <EditText-->
-<!--            android:id="@+id/login_password"-->
-<!--            android:layout_width="0dp"-->
-<!--            android:layout_height="56dp"-->
-<!--            android:layout_marginTop="40dp"-->
-<!--            android:autofillHints="N/A"-->
-<!--            android:ems="10"-->
-<!--            android:hint="@string/enter_password"-->
-<!--            android:textColor="#2E0A0A"-->
-<!--            android:textColorHint="#78909C"-->
-<!--            app:layout_constraintEnd_toEndOf="parent"-->
-<!--            app:layout_constraintHorizontal_bias="0.0"-->
-<!--            app:layout_constraintStart_toStartOf="parent"-->
-<!--            app:layout_constraintTop_toBottomOf="@+id/login_username"-->
-<!--            tools:ignore="TextFields" />-->
-
-
-        <EditText
-            android:id="@+id/login_username"
-            android:layout_width="0dp"
-            android:layout_height="56dp"
-            android:layout_marginTop="40dp"
-            android:autofillHints="Username"
-            android:ems="10"
-            android:hint="@string/enter_username"
-            android:inputType="textPersonName"
-            android:textColor="#2E0A0A"
-            android:textColorHint="#78909C"
+        <LinearLayout
+            android:layout_width="294dp"
+            android:layout_height="462dp"
+            android:background="@drawable/linearlayoutshape"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView" />
-
-        <EditText
-            android:id="@+id/login_password"
-            android:layout_width="0dp"
-            android:layout_height="56dp"
-            android:layout_marginTop="40dp"
-            android:autofillHints="Username"
-            android:ems="10"
-            android:hint="@string/enter_password"
-            android:inputType="textPersonName"
-            android:textColor="#2E0A0A"
-            android:textColorHint="#78909C"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/login_username"
-            tools:ignore="TextFields" />
-
-        <Button
-            android:id="@+id/login_refresh"
-            android:layout_width="175dp"
-            android:layout_height="50dp"
-            android:layout_marginTop="40dp"
-            android:background="#000000"
-            android:onClick="login_refresh"
-            android:shadowColor="#FFFFFF"
-            android:text="@string/login_me"
-            android:textColor="#FFFFFF"
-            android:textColorHint="#FAFAFA"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/login_password" />
-
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="match_parent"
-            android:layout_height="222dp"
-            android:layout_marginStart="5dp"
-            android:layout_marginTop="30dp"
-            android:layout_marginEnd="5dp"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/minorproject"
-            tools:ignore="ContentDescription" />
+            app:layout_constraintVertical_bias="0.427"
+            tools:ignore="MissingConstraints">
 
+            <TextView
+                android:id="@+id/welcome"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="@string/welcome"
+                android:textSize="40sp"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/green"/>
+
+            <EditText
+                android:id="@+id/login_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="10dp"
+                android:autofillHints="Username"
+                android:ems="10"
+                android:hint="@string/enter_username"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:textColor="#00838F"
+                android:textColorHint="#00838F"
+                tools:ignore="MissingConstraints" />
+
+            <EditText
+                android:id="@+id/login_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:autofillHints="Username"
+                android:ems="10"
+                android:hint="@string/enter_password"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:textColor="#00838F"
+                android:textColorHint="#00838F"
+                tools:ignore="TextFields" />
+
+            <Button
+                android:id="@+id/login_refresh"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/roundbutton"
+                android:onClick="login_refresh"
+                android:text="@string/login_me"
+                android:textColor="#FFF"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="120dp"
+                android:layout_height="112dp"
+                android:layout_marginStart="85dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/leaf" />
+
+        </LinearLayout>
 
     </android.support.constraint.ConstraintLayout>
 </ScrollView>

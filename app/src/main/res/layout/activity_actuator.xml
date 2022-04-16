@@ -14,82 +14,282 @@
         android:layout_height="wrap_content"
         tools:context=".Actuator">
 
-        <TextView
-            android:id="@+id/display"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="@string/actuator_control"
-            android:textAlignment="center"
-            android:textColor="#00B0FF"
-            android:textSize="24sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.464"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.033"
-            tools:ignore="TextContrastCheck" />
-
-        <Switch
+        <android.support.v7.widget.SwitchCompat
             android:id="@+id/tempAct"
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:layout_marginTop="30dp"
+            android:layout_width="320dp"
+            android:layout_height="94dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/linearlayoutshapesensor"
             android:paddingStart="30dp"
             android:paddingEnd="15dp"
             android:text="@string/temperature_act"
-            android:textColor="#000000"
-            android:textSize="24sp"
+            android:textSize="20sp"
+            android:textColor="#86000000"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/display" />
+            app:layout_constraintTop_toTopOf="parent" />
 
-        <Switch
+        <android.support.v7.widget.SwitchCompat
             android:id="@+id/humAct"
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_width="320dp"
+            android:layout_height="94dp"
             android:layout_marginTop="15dp"
+            android:background="@drawable/linearlayoutshapesensor"
             android:paddingStart="30dp"
             android:paddingEnd="15dp"
             android:text="@string/humidty_act"
-            android:textColor="#A1887F"
-            android:textSize="24sp"
+            android:textSize="20sp"
+            android:textColor="#86000000"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tempAct" />
 
-        <Switch
+        <android.support.v7.widget.SwitchCompat
             android:id="@+id/lightAct"
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_width="320dp"
+            android:layout_height="94dp"
             android:layout_marginTop="15dp"
+            android:background="@drawable/linearlayoutshapesensor"
             android:paddingStart="30dp"
             android:paddingEnd="15dp"
             android:text="@string/light_act"
-            android:textColor="#000000"
-            android:textSize="24sp"
+            android:textSize="20sp"
+            android:textColor="#86000000"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/humAct" />
 
-        <Switch
+        <android.support.v7.widget.SwitchCompat
             android:id="@+id/soilAct"
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_width="320dp"
+            android:layout_height="94dp"
             android:layout_marginTop="15dp"
+            android:background="@drawable/linearlayoutshapesensor"
             android:paddingStart="30dp"
             android:paddingEnd="15dp"
             android:text="@string/soil_moisture_act"
-            android:textColor="#A1887F"
-            android:textSize="24sp"
+            android:textSize="20sp"
+            android:textColor="#86000000"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/lightAct" />
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
+
+    <!--
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:ignore="SpeakableTextPresentCheck"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="0dp">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".Actuator">
+
+        <android.support.v7.widget.GridLayout
+            android:id="@+id/gridLayout"
+            android:layout_width="322dp"
+            android:layout_height="159dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/linearlayoutshapesensor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.505"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/temp_act_text"
+                android:layout_width="158dp"
+                android:layout_height="76dp"
+                android:paddingStart="20dp"
+                android:paddingTop="25dp"
+                android:text="@string/temperature_act"
+                android:textSize="20sp"
+                app:layout_column="0"
+                app:layout_row="0"
+                tools:ignore="RtlSymmetry" />
+
+            <Button
+                android:id="@+id/on_switch_temp"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="30dp"
+                android:background="@drawable/roundbutton_actuator"
+                android:text="@string/on_switch"
+                android:textColor="#FFF"
+                android:textSize="15sp"
+                app:layout_column="0"
+                app:layout_row="1" />
+
+            <Button
+                android:id="@+id/off_switch_temp"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="30dp"
+                android:background="@drawable/roundbutton_actuator"
+                android:text="@string/off_switch"
+                android:textColor="#FFF"
+                android:textSize="15sp"
+                app:layout_column="1"
+                app:layout_row="1" />
+
+        </android.support.v7.widget.GridLayout>
+
+        <android.support.v7.widget.GridLayout
+            android:id="@+id/gridLayout2"
+            android:layout_width="322dp"
+            android:layout_height="159dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/linearlayoutshapesensor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gridLayout">
+
+            <TextView
+                android:id="@+id/humid_act_text"
+                android:layout_width="158dp"
+                android:layout_height="76dp"
+                android:paddingStart="20dp"
+                android:paddingTop="25sp"
+                android:text="@string/humidty_act"
+                android:textSize="20sp"
+                app:layout_column="0"
+                app:layout_row="0"
+                tools:ignore="RtlSymmetry" />
+
+            <Button
+                android:id="@+id/on_switch_humid"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="30dp"
+                android:background="@drawable/roundbutton_actuator"
+                android:text="@string/on_switch"
+                android:textColor="#FFF"
+                android:textSize="15sp"
+                app:layout_column="0"
+                app:layout_row="1" />
+
+            <Button
+                android:id="@+id/off_switch_humid"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="30dp"
+                android:background="@drawable/roundbutton_actuator"
+                android:text="@string/off_switch"
+                android:textColor="#FFF"
+                android:textSize="15sp"
+                app:layout_column="1"
+                app:layout_row="1" />
+
+        </android.support.v7.widget.GridLayout>
+
+        <android.support.v7.widget.GridLayout
+            android:id="@+id/gridLayout3"
+            android:layout_width="322dp"
+            android:layout_height="159dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/linearlayoutshapesensor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gridLayout2">
+
+            <TextView
+                android:id="@+id/light_act"
+                android:layout_width="158dp"
+                android:layout_height="76dp"
+                android:paddingStart="20dp"
+                android:paddingTop="25sp"
+                android:text="@string/light_act"
+                android:textSize="20sp"
+                app:layout_column="0"
+                app:layout_row="0"
+                tools:ignore="RtlSymmetry" />
+
+            <Button
+                android:id="@+id/on_light"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="30dp"
+                android:background="@drawable/roundbutton_actuator"
+                android:text="@string/on_switch"
+                android:textColor="#FFF"
+                android:textSize="15sp"
+                app:layout_column="0"
+                app:layout_row="1" />
+
+            <Button
+                android:id="@+id/off_light"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="30dp"
+                android:background="@drawable/roundbutton_actuator"
+                android:text="@string/off_switch"
+                android:textColor="#FFF"
+                android:textSize="15sp"
+                app:layout_column="1"
+                app:layout_row="1" />
+
+        </android.support.v7.widget.GridLayout>
+
+        <android.support.v7.widget.GridLayout
+            android:layout_width="322dp"
+            android:layout_height="159dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/linearlayoutshapesensor"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gridLayout3"
+            app:layout_constraintVertical_bias="0.122">
+
+            <TextView
+                android:id="@+id/light_act_text"
+                android:layout_width="158dp"
+                android:layout_height="76dp"
+                android:paddingStart="20dp"
+                android:paddingTop="25sp"
+                android:text="@string/soil_moisture_act"
+                android:textSize="20sp"
+                app:layout_column="0"
+                app:layout_row="0"
+                tools:ignore="RtlSymmetry" />
+
+            <Button
+                android:id="@+id/on_switch_soil"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="30dp"
+                android:background="@drawable/roundbutton_actuator"
+                android:text="@string/on_switch"
+                android:textColor="#FFF"
+                android:textSize="15sp"
+                app:layout_column="0"
+                app:layout_row="1" />
+
+            <Button
+                android:id="@+id/off_switch_soil"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="30dp"
+                android:background="@drawable/roundbutton_actuator"
+                android:text="@string/off_switch"
+                android:textColor="#FFF"
+                android:textSize="15sp"
+                app:layout_column="1"
+                app:layout_row="1" />
+
+        </android.support.v7.widget.GridLayout>
 
 
     </android.support.constraint.ConstraintLayout>
 </ScrollView>
+-->
