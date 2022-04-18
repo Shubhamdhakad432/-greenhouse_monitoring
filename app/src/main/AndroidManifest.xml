@@ -5,7 +5,6 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
 
-
     <application
         android:allowBackup="true"
         android:hardwareAccelerated="false"
@@ -23,7 +22,7 @@
             android:parentActivityName=".SensorData" />
         <activity
             android:name=".SensorData"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
