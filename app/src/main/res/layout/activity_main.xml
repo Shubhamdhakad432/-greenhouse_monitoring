@@ -19,7 +19,7 @@
 
         <LinearLayout
             android:layout_width="294dp"
-            android:layout_height="462dp"
+            android:layout_height="480dp"
             android:background="@drawable/linearlayoutshape"
             android:orientation="vertical"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -33,10 +33,10 @@
             <TextView
                 android:id="@+id/welcome"
                 android:layout_width="wrap_content"
-                android:layout_height="50dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:text="@string/welcome"
                 android:textSize="40sp"
-                android:layout_marginStart="60dp"
                 android:layout_marginTop="20dp"
                 android:textColor="@color/green"/>
 
@@ -44,9 +44,8 @@
                 android:id="@+id/login_username"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="40dp"
+                android:layout_gravity="center"
                 android:layout_marginTop="40dp"
-                android:layout_marginEnd="10dp"
                 android:autofillHints="Username"
                 android:ems="10"
                 android:hint="@string/enter_username"
@@ -61,9 +60,8 @@
                 android:id="@+id/login_password"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="40dp"
+                android:layout_gravity="center"
                 android:layout_marginTop="10dp"
-                android:layout_marginEnd="10dp"
                 android:autofillHints="Username"
                 android:ems="10"
                 android:hint="@string/enter_password"
@@ -76,11 +74,10 @@
 
             <Button
                 android:id="@+id/login_refresh"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginLeft="10dp"
+                android:layout_width="209dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:layout_marginTop="30dp"
-                android:layout_marginRight="10dp"
                 android:background="@drawable/roundbutton"
                 android:onClick="login_refresh"
                 android:text="@string/login_me"
@@ -90,12 +87,11 @@
             <Button
                 android:id="@+id/button"
                 android:layout_width="120dp"
-                android:layout_height="112dp"
-                android:layout_marginStart="85dp"
+                android:layout_height="120dp"
                 android:layout_marginTop="30dp"
                 android:onClick="login_refresh"
-                android:layout_marginEnd="10dp"
-                android:layout_marginBottom="20dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="30dp"
                 android:background="@drawable/leaf" />
 
         </LinearLayout>

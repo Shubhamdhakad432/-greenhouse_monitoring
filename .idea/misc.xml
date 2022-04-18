@@ -4,10 +4,13 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/hp/AndroidStudioProjects/GreenhouseMonitoring/app/src/main/res/drawable/linearlayoutshapesensor.xml" value="0.179" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/GreenhouseMonitoring/app/src/main/res/drawable/roundbutton_actuator.xml" value="0.2255" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/GreenhouseMonitoring/app/src/main/res/layout/activity_actuator.xml" value="0.25" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/GreenhouseMonitoring/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/GreenhouseMonitoring/app/src/main/res/layout/activity_sensor_data.xml" value="0.1" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/GreenhouseMonitoring/app/src/main/res/layout/activity_sensor_data_graph.xml" value="0.25" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/GreenhouseMonitoring/app/src/main/res/layout/sesnordatagraph.xml" value="0.25" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/GreenhouseMonitoring/app/src/main/res/layout/test.xml" value="0.16165413533834586" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/GreenhouseMonitoring/app/src/main/res/layout/testlayout.xml" value="0.25" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/GreenhouseMonitoring/app/src/main/res/layout/tstlayout.xml" value="0.25" />
       </map>
