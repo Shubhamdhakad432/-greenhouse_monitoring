@@ -47,7 +47,7 @@
                     android:layout_height="60dp"
                     android:layout_gravity="center"
                     android:layout_marginStart="20dp"
-                    android:background="@drawable/roundbutton_actuator"
+                    android:background="@drawable/roundbutton"
                     android:text="@string/on_switch"
                     android:textColor="#FFF"
                     android:textSize="15sp" />
@@ -58,7 +58,7 @@
                     android:layout_height="60dp"
                     android:layout_gravity="center"
                     android:layout_marginStart="20dp"
-                    android:background="@drawable/roundbutton_actuator"
+                    android:background="@drawable/roundbutton"
                     android:text="@string/off_switch"
                     android:textColor="#FFF"
                     android:textSize="15sp" />
@@ -98,7 +98,7 @@
                     android:layout_height="60dp"
                     android:layout_gravity="center"
                     android:layout_marginStart="20dp"
-                    android:background="@drawable/roundbutton_actuator"
+                    android:background="@drawable/roundbutton"
                     android:text="@string/on_switch"
                     android:textColor="#FFF"
                     android:textSize="15sp" />
@@ -109,7 +109,7 @@
                     android:layout_height="60dp"
                     android:layout_gravity="center"
                     android:layout_marginStart="20dp"
-                    android:background="@drawable/roundbutton_actuator"
+                    android:background="@drawable/roundbutton"
                     android:text="@string/off_switch"
                     android:textColor="#FFF"
                     android:textSize="15sp" />
@@ -149,7 +149,7 @@
                     android:layout_height="60dp"
                     android:layout_gravity="center"
                     android:layout_marginStart="20dp"
-                    android:background="@drawable/roundbutton_actuator"
+                    android:background="@drawable/roundbutton"
                     android:text="@string/on_switch"
                     android:textColor="#FFF"
                     android:textSize="15sp" />
@@ -160,7 +160,7 @@
                     android:layout_height="60dp"
                     android:layout_gravity="center"
                     android:layout_marginStart="20dp"
-                    android:background="@drawable/roundbutton_actuator"
+                    android:background="@drawable/roundbutton"
                     android:text="@string/off_switch"
                     android:textColor="#FFF"
                     android:textSize="15sp" />
@@ -202,7 +202,7 @@
                     android:layout_height="60dp"
                     android:layout_gravity="center"
                     android:layout_marginStart="20dp"
-                    android:background="@drawable/roundbutton_actuator"
+                    android:background="@drawable/roundbutton"
                     android:text="@string/on_switch"
                     android:textColor="#FFF"
                     android:textSize="15sp" />
@@ -213,7 +213,7 @@
                     android:layout_height="60dp"
                     android:layout_gravity="center"
                     android:layout_marginStart="20dp"
-                    android:background="@drawable/roundbutton_actuator"
+                    android:background="@drawable/roundbutton"
                     android:text="@string/off_switch"
                     android:textColor="#FFF"
                     android:textSize="15sp" />
