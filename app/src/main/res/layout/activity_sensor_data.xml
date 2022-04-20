@@ -59,7 +59,7 @@
 
             </LinearLayout>
 
-            <com.github.mikephil.charting.charts.BarChart
+            <com.github.mikephil.charting.charts.LineChart
                 android:id="@+id/temp_BarChart"
                 android:layout_width="300dp"
                 android:layout_height="293dp"
@@ -120,7 +120,7 @@
 
             </LinearLayout>
 
-            <com.github.mikephil.charting.charts.BarChart
+            <com.github.mikephil.charting.charts.LineChart
                 android:id="@+id/humid_BarChart"
                 android:layout_width="300dp"
                 android:layout_height="293dp"
@@ -182,7 +182,7 @@
 
             </LinearLayout>
 
-            <com.github.mikephil.charting.charts.BarChart
+            <com.github.mikephil.charting.charts.LineChart
                 android:id="@+id/light_BarChart"
                 android:layout_width="300dp"
                 android:layout_height="293dp"
@@ -243,7 +243,7 @@
 
             </LinearLayout>
 
-            <com.github.mikephil.charting.charts.BarChart
+            <com.github.mikephil.charting.charts.LineChart
                 android:id="@+id/soil_BarChart"
                 android:layout_width="300dp"
                 android:layout_height="293dp"
