@@ -238,7 +238,7 @@ public class SensorData extends AppCompatActivity {
 
         barChart_soil=findViewById(R.id.soil_BarChart);
         List<Entry> barEntries_soil = new ArrayList<>();
-        barEntries_soil.add(new Entry(0f,0f));
+        barEntries_soil.add(new Entry(0.99999999f,0f));
         barEntries_soil.add(new Entry(1,33.5f));
         barEntries_soil.add(new Entry(2,35f));
         barEntries_soil.add(new Entry(3,32f));

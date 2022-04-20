@@ -92,7 +92,7 @@
                 android:onClick="login_refresh"
                 android:layout_gravity="center"
                 android:layout_marginBottom="30dp"
-                android:background="@drawable/leaf" />
+                android:background="@drawable/leaf_login" />
 
         </LinearLayout>
 
