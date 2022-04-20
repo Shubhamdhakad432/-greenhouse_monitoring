@@ -106,9 +106,9 @@ public class SensorData extends AppCompatActivity {
                     barData_temp=new LineData(barDataSet_temp);
                     barChart_temp.setData(barData_temp);
 //                    barDataSet_temp.setColors(ColorTemplate.JOYFUL_COLORS);
-                    barDataSet_temp.setColors(ColorTemplate.rgb("#179D9A"));
+                    barDataSet_temp.setColors(ColorTemplate.rgb("#FFC70D"));
                     barDataSet_temp.setValueTextColor(Color.BLACK);
-                    barDataSet_temp.setValueTextSize(8f);
+                    barDataSet_temp.setValueTextSize(10f);
 
                     TextView textView = (TextView) findViewById(R.id.temp_display);
                     textView.setText(value0 + " ℃");
@@ -175,9 +175,9 @@ public class SensorData extends AppCompatActivity {
                     barDataSet_humid=new LineDataSet(barEntries_humid,"Humidity");
                     barData_humid=new LineData(barDataSet_humid);
                     barChart_humid.setData(barData_humid);
-                    barDataSet_humid.setColors(ColorTemplate.rgb("#179D9A"));
+                    barDataSet_humid.setColors(ColorTemplate.rgb("#FFC70D"));
                     barDataSet_humid.setValueTextColor(Color.BLACK);
-                    barDataSet_humid.setValueTextSize(8f);
+                    barDataSet_humid.setValueTextSize(9f);
 
                     TextView textView = (TextView) findViewById(R.id.hum_display);
                     textView.setText(value0 + " %RH");
@@ -226,7 +226,7 @@ public class SensorData extends AppCompatActivity {
         barChart_light.setData(barData_light);
         barDataSet_light.setColors(ColorTemplate.JOYFUL_COLORS);
         barDataSet_light.setValueTextColor(Color.BLACK);
-        barDataSet_light.setValueTextSize(8f);
+        barDataSet_light.setValueTextSize(9f);
 
 
 
@@ -252,7 +252,7 @@ public class SensorData extends AppCompatActivity {
         barChart_soil.setData(barData_soil);
         barDataSet_soil.setColors(ColorTemplate.JOYFUL_COLORS);
         barDataSet_soil.setValueTextColor(Color.BLACK);
-        barDataSet_soil.setValueTextSize(8f);
+        barDataSet_soil.setValueTextSize(10f);
     }
 
     public void login_actuator(View view) {
